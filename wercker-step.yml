@@ -1,0 +1,25 @@
+name: md-email-notify
+version: 0.0.1
+description: send an email message base on markdown template
+keywords:
+  - notification
+  - email
+  - markdown
+properties:
+  username:
+    type: string
+    required: true
+
+  host:
+    type: string
+    required: true
+
+  file:
+    type: string
+    required: true
+
+  ssl:
+    type: string
+    default: no
+
+
