@@ -5,7 +5,7 @@ if [ "$WERCKER_MD_MAIL_NOTIFY_SSL" = "yes" ]; then
   SSL="--ssl"
 fi
 
-md-mailer
+MDMAIL_PASS="$WERCKER_MD_MAILER_PASS" md-mailer
   $SSL \
   -h "$WERCKER_MD_MAIL_NOTIFY_HOST" \
   -u "$WERCKER_MD_MAIL_NOTIFY_USER" \
