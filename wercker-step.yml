@@ -6,7 +6,7 @@ keywords:
   - email
   - markdown
 properties:
-  username:
+  user:
     type: string
     required: true
 
