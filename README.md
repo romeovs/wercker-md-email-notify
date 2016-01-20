@@ -10,6 +10,7 @@ include the following step in your `wercker.yml`, `steps` or
 ```
 - romeovs/md-mail-notify:
     user: me@example.com
+    pass: $EMAIL_PASS
     host: smtp.example.com
     ssl: yes
     file: ./path/to/email.md
