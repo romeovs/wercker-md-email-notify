@@ -1,6 +1,6 @@
 name: md-email-notify
 version: 0.0.1
-description: send an email message base on markdown template
+description: Send an email message based on markdown template.
 keywords:
   - notification
   - email
