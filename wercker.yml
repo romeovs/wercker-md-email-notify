@@ -1,11 +1,13 @@
 # we need node
-box: nodesource/trusty
+box: wercker/default
 
 build:
   steps:
-    - shellcheck
+    - install-packages:
+        packages: npm
     - script:
         name: install md-mailer globally
         code: |
           sudo npm install -g md-mailer
+    - shellcheck
     # - validate-wercker-step
