@@ -32,4 +32,16 @@ build (the build status for example).
 
 Check the [`md-mailer`][md-mailer] docs for more information.
 
+## Options
+
+  - `user` (*required*) — username of the smtp server
+  - `pass` (*required*) — password of the smtp server
+  - `host` (*required*) — the host of the smtp server
+  - `file` (*required*) — the location of the email template
+  - `ssl` — if equal to `yes`, SSL will be used (defaults to `no`)
+  - `port` — port of the smtp server (if not specified it will depend on
+    the `ssl` setting)
+  - `on` — when to send the email, (possible values: `always` or `failed`,
+    default is `always`)
+
 [md-mailer]: https://github.com/romeovs/md-mailer
