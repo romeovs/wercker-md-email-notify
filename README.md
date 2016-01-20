@@ -8,7 +8,7 @@ include the following step in your `wercker.yml`, `steps` or
 `after-steps`:
 
 ```
-- romeovs/md-mail-notify:
+- romeovs/md-email-notify:
     user: me@example.com
     pass: $EMAIL_PASS
     host: smtp.example.com
