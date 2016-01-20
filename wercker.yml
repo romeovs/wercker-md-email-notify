@@ -1,3 +1,4 @@
+# we need node and npm
 box: nodesource/trusty
 build:
   steps:
