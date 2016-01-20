@@ -40,7 +40,7 @@ if [ "$WERCKER_MD_EMAIL_NOTIFY_ON" = "failed" ]; then
   fi
 fi
 
-"$WERCKER_STEP_ROOT/node_modules/build/md-mailer/cli.js"
+"$WERCKER_STEP_ROOT/node_modules/md-mailer/build/cli.js"
   -h "$WERCKER_MD_EMAIL_NOTIFY_HOST" \
   -u "$WERCKER_MD_EMAIL_NOTIFY_USER" \
   -p "$WERCKER_MD_EMAIL_NOTIFY_PASS" \
