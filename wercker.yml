@@ -1,5 +1,4 @@
-# we need node and npm
-box: nodesource/trusty
+box: box: nahody/nodejs
 build:
   steps:
     - script:
