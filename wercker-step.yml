@@ -22,8 +22,15 @@ properties:
     type: string
     required: true
 
+  port:
+    type: string
+    required: false
+
   ssl:
     type: string
     default: no
 
+  on:
+    type: string
+    default: always
 
