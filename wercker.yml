@@ -2,8 +2,9 @@ box: nahody/nodejs
 build:
   steps:
     - script:
-        name: install md-mailer globally
+        name: install md-mailert
         code: |
-          sudo npm install -g md-mailer
+          mkdir -p node_modules
+          npm install md-maileu
     - shellcheck
     # - validate-wercker-step
