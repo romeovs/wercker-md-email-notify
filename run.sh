@@ -2,22 +2,22 @@
 
 # check if required properties are set.
 if [ ! -n "$WERCKER_MD_EMAIL_NOTIFY_HOST" ]; then
-  error "Please specify \`host\` property"
+  echo "Please specify \`host\` property"
   exit 1
 fi
 
 if [ ! -n "$WERCKER_MD_EMAIL_NOTIFY_USER" ]; then
-  error "Please specify \`user\` property"
+  echo "Please specify \`user\` property"
   exit 1
 fi
 
 if [ ! -n "$WERCKER_MD_EMAIL_NOTIFY_PASS" ]; then
-  error "Please specify \`pass\` property"
+  echo "Please specify \`pass\` property"
   exit 1
 fi
 
 if [ ! -n "$WERCKER_MD_EMAIL_NOTIFY_FILE" ]; then
-  error "Please specify \`file\` property"
+  echo "Please specify \`file\` property"
   exit 1
 fi
 
@@ -32,11 +32,11 @@ if [ -n "$WERCKER_MD_EMAIL_NOTIFY_PORT" ]; then
   PORTN="$WERCKER_MD_EMAIL_NOTIFY_PORT"
 fi
 
-# Skip if `on` is set to `failed` and build passed.
+Skip if `on` is set to `failed` and build passed.
 if [ "$WERCKER_MD_EMAIL_NOTIFY_ON" = "failed" ]; then
   if [ "$WERCKER_RESULT" = "passed" ]; then
     echo "Build passed, skipping..."
-    return 0
+    exit 0
   fi
 fi
 
