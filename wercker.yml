@@ -1,0 +1,11 @@
+# we need node
+box: nodesource/trusty
+
+build:
+  steps:
+    - shellcheck
+    - script:
+        name: install md-mailer globally
+        code: |
+          sudo npm install -g md-mailer
+    - validate-wercker-step
