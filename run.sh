@@ -32,7 +32,7 @@ if [ -n "$WERCKER_MD_EMAIL_NOTIFY_PORT" ]; then
   PORTN="$WERCKER_MD_EMAIL_NOTIFY_PORT"
 fi
 
-Skip if `on` is set to `failed` and build passed.
+# Skip if `on` is set to `failed` and build passed.
 if [ "$WERCKER_MD_EMAIL_NOTIFY_ON" = "failed" ]; then
   if [ "$WERCKER_RESULT" = "passed" ]; then
     echo "Build passed, skipping..."
