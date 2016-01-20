@@ -8,4 +8,4 @@ build:
         name: install md-mailer globally
         code: |
           sudo npm install -g md-mailer
-    - validate-wercker-step
+    # - validate-wercker-step
