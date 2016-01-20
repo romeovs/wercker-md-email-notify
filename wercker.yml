@@ -1,8 +1,6 @@
-box: wercker/default
+box: nodesource/trusty
 build:
   steps:
-    - install-packages:
-        packages: npm
     - script:
         name: install md-mailer globally
         code: |
