@@ -1,6 +1,4 @@
-# we need node
 box: wercker/default
-
 build:
   steps:
     - install-packages:
